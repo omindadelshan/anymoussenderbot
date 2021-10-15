@@ -12,7 +12,7 @@ START_TXT = "Hi Bro bay"
 async def tag(client, message):
   await message.copy(message.chat.id)
   
-@bot.on_message(filters.command(["start"]))
+@app.on_message(filters.command(["start"]))
 async def start(bot, update):
     text = START_TXT.format(update.from_user.mention)
     await update.reply_text(
