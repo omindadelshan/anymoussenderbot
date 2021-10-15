@@ -8,7 +8,7 @@ app = Client("tagremover1", bot_token = TOKEN, api_id = API_ID, api_hash = API_H
 
 @app.on_message(filters.private & filters.text | filters.media)
 async def tag(client, message):
-  await mess
-  age.copy(message.chat.id)
+  await message 
+  message.copy(message.chat.id)
 
 app.run()
